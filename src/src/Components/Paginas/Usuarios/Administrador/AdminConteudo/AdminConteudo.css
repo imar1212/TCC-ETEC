@@ -1,0 +1,164 @@
+/* Container geral */
+.admin-conteudo-container {
+  max-width: 1200px;
+  margin: 0vh auto 10vh auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 2rem;
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: slideUp 0.6s ease-out;
+}
+
+.search-input{
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  background: #fafafa;
+  transition: all 0.25s ease;
+  margin: 3vh 0 2vh 0;
+}
+
+/* Título da página */
+.admin-conteudo-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #8017f0, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.admin-conteudo-container .voltar-btn{
+  margin-right: 90%;
+}
+
+.admin-conteudo-container h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #8017f0, #2575fc);
+  border-radius: 2px;
+}
+
+/* Botão criar novo conteúdo */
+.admin-conteudo-container .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #8717ff, #2575fc);
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-conteudo-container .btn:hover {
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid de conteúdos */
+.conteudos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Card individual */
+.conteudo-card {
+  background: rgba(249, 250, 251, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.conteudo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do card */
+.conteudo-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #4a148c;
+  font-weight: bold;
+}
+
+/* Resumo e informações */
+.conteudo-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Botão deletar */
+.conteudo-card button {
+  margin-top: 1rem;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #ef4444, #e53935);
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.conteudo-card button:hover {
+  background: linear-gradient(135deg, #f87171, #ef5350);
+  transform: translateY(-2px);
+}
+
+/* Mensagem quando não há conteúdo */
+.admin-conteudo-container p {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .admin-conteudo-container {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .conteudo-card {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-conteudo-container {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .conteudo-card {
+    padding: 0.75rem;
+  }
+}

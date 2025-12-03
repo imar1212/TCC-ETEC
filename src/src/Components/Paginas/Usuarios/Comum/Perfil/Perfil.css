@@ -1,0 +1,100 @@
+/* Container principal */
+.perfil-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  animation: fadeIn 0.4s ease;
+}
+.voltar-btn {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  align-self: flex-end;
+}
+
+/* Cabeçalho */
+.perfil-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.perfil-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: linear-gradient(135deg, #6a11cb, #2575fc);;
+}
+
+.perfil-header p {
+  color: #636e72;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+/* Foto de perfil */
+.perfil-foto {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.perfil-foto img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.perfil-foto img:hover {
+  transform: scale(1.05);
+}
+
+/* Seções */
+.perfil-section {
+  margin-bottom: 25px;
+}
+
+.perfil-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #2d3436;
+  border-left: 4px solid #6a11cb;
+  padding-left: 10px;
+}
+
+.perfil-section p {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Pronomes */
+.pronomes-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.pronome-badge {
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

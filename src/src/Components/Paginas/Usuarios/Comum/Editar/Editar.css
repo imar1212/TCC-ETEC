@@ -1,0 +1,67 @@
+/* Estilos padronizados para edição de comentários e posts */
+.editar-comentario,
+.editar-post {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.editar-comentario textarea,
+.editar-post textarea {
+  width: 100%;
+  min-height: 80px;
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 0.95rem;
+}
+
+.editar-comentario-acoes,
+.editar-post-acoes {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.editar-comentario button,
+.editar-post button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.editar-comentario button:first-child,
+.editar-post button:first-child {
+  background: #f1f5f9;
+  color: #64748b;
+  border: 1px solid #cbd5e1;
+}
+
+.editar-comentario button:first-child:hover,
+.editar-post button:first-child:hover {
+  background: #e2e8f0;
+}
+
+.editar-comentario button:last-child,
+.editar-post button:last-child {
+  background: linear-gradient(135deg, #8017f0, #2575fc);
+  color: white;
+}
+
+.editar-comentario button:last-child:hover,
+.editar-post button:last-child:hover {
+  background: linear-gradient(-135deg, #8017f0, #2575fc);
+}
+
+.editar-comentario .erro,
+.editar-post .erro {
+  background: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}

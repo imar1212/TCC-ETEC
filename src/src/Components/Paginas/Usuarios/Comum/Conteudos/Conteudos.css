@@ -1,0 +1,249 @@
+/* ===== CONTAINER GERAL ===== */
+.pp-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background: #fafafa;
+  color: #1f2937;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===== CABEÇALHO ===== */
+.pp-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pp-header h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #6d28d9, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.75rem;
+}
+
+.pp-header p {
+  color: #6b7280;
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== FILTROS DE CATEGORIA ===== */
+.pp-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.pp-btn {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 9999px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+}
+
+/* Hover colorido (dinâmico por categoria) */
+.pp-btn:hover {
+  background: var(--hover-cor);
+  border-color: var(--hover-cor);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px -6px var(--hover-cor);
+}
+
+/* Botão ativo */
+.pp-btn.ativo {
+  background: var(--hover-cor);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 8px 20px -6px var(--hover-cor);
+}
+
+/* ===== SEÇÕES DE CATEGORIA ===== */
+.pp-section {
+  margin-bottom: 4rem;
+}
+
+.pp-titulo {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 6px solid var(--cor, #6366f1);
+}
+
+.pp-titulo h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--cor, #4f46e5);
+  margin: 0;
+}
+
+.pp-titulo p {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+/* ===== GRID DE CARDS ===== */
+.pp-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ===== CARD ===== */
+.pp-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f3f4f6;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-left 0.35s ease;
+}
+
+/* Hover colorido e animado */
+.pp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px -10px var(--hover-cor, rgba(79, 70, 229, 0.25));
+  border-left: 6px solid var(--hover-cor, #4f46e5);
+}
+
+/* ===== IMAGEM ===== */
+.pp-img-wrapper {
+  height: 180px;
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+.pp-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.pp-card:hover .pp-img {
+  transform: scale(1.08);
+}
+
+/* ===== CONTEÚDO DO CARD ===== */
+.pp-card-body {
+  padding: 1.25rem 1rem;
+}
+
+.pp-card-body h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.pp-card-resumo {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  margin-bottom: 0.75rem;
+}
+
+.pp-meta {
+  font-size: 0.85rem;
+  color: #6b7280;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* ===== LOADING ===== */
+.pp-loading {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.pp-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e5e7eb;
+  border-top: 5px solid #7c3aed;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+/* ===== ESTADO VAZIO ===== */
+.pp-empty {
+  text-align: center;
+  color: #9ca3af;
+  font-style: italic;
+  padding: 2rem 0;
+}
+
+/* ====== ANIMAÇÕES CSS ====== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInTop {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.7s ease forwards;
+}
+
+.fade-in-top {
+  animation: fadeInTop 0.8s ease forwards;
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+  .pp-header h1 {
+    font-size: 2.25rem;
+  }
+
+  .pp-titulo h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pp-container {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .pp-header h1 {
+    font-size: 1.9rem;
+  }
+
+  .pp-btn {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .pp-titulo {
+    border-left-width: 4px;
+    padding-left: 0.75rem;
+  }
+}
