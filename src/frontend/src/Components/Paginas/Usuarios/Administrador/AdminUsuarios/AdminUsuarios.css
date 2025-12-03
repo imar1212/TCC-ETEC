@@ -1,0 +1,267 @@
+/* Container principal */
+.admin-container {
+  margin: 0px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* Título */
+.admin-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 700;
+  font-size: 28px;
+  
+}
+
+.admin-container .voltar-btn{
+  margin-right: 90%;
+}
+
+/* Mensagens */
+.mensagem {
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+.mensagem.sucesso {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+.mensagem.erro {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Tabela moderna */
+.tabela-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.tabela-usuarios th, .tabela-usuarios td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+}
+.tabela-usuarios th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.tabela-usuarios tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Destaque para o usuário logado */
+.usuario-logado {
+  background-color: #f0f7ff !important;
+  color: #666;
+}
+
+.voce-badge {
+  background: #3498db;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+/* Container para os botões de ação - GRID 2x2 */
+.acoes-container-horizontal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+/* ================= BOTÕES DA TABELA ================= */
+.tabela-usuarios button {
+  padding: 8px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ADMIN - Azul → Roxo */
+.btn-admin {
+  background: linear-gradient(90deg, #00a6e2, #6e18c4);
+}
+.btn-admin.admin-ativo {
+  background: linear-gradient(90deg, #e40303, #ff8c00);
+}
+
+/* STATUS - Verde → Azul */
+.btn-status.status-ativo {
+  background: linear-gradient(90deg, #f39c12, #e67e22);
+}
+.btn-status.status-inativo {
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+}
+
+/* EXCLUIR - Rosa → Vermelho */
+.btn-excluir {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  grid-column: span 2;
+}
+
+/* Hover + clique */
+.tabela-usuarios button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  opacity: 0.95;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+.tabela-usuarios button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+/* Botão desativado */
+.tabela-usuarios button:disabled {
+  
+  background: #bdc3c7 !important;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+/* ================= MODAL ================= */
+.modal-buttons button:first-child {
+  background: linear-gradient(90deg, #2ecc71, #00b043);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 176, 67, 0.4);
+}
+.modal-buttons button:last-child {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 65, 108, 0.4);
+}
+
+.modal-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* Modal moderno */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: modalAppear 0.3s ease-out;
+}
+@keyframes modalAppear {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+.modal p {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.modal-buttons button {
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+.modal-buttons button:first-child {
+  background: linear-gradient(135deg, #00b0438a 0%, #96c93d 100%);
+  color: white;
+}
+.modal-buttons button:last-child {
+  background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+  color: white;
+}
+.modal-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Estado de carregamento */
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .admin-container {
+    margin: 20px;
+    padding: 15px;
+  }
+  
+  .tabela-usuarios {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .acoes-container-horizontal {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  
+  .btn-excluir {
+    grid-column: span 1;
+  }
+  
+  .modal {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .modal-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .modal-buttons button {
+    width: 100%;
+  }
+}
+

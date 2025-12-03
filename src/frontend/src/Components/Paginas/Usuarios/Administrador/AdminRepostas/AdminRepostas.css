@@ -1,0 +1,285 @@
+/* Container principal */
+.admin-respostas-container {
+  margin: 0px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* Container do header com título e botões */
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.admin-respostas-container .voltar-btn{
+  margin-right: 100%;
+}
+
+/* Botão de punição */
+.btn-punicao {
+  margin-left: auto;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-punicao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(231, 76, 60, 0.4);
+  background: linear-gradient(135deg, #c0392b, #a93226);
+}
+
+.btn-punicao:active {
+  transform: scale(0.98);
+}
+
+/* Responsividade para o header */
+@media (max-width: 768px) {
+  .header-buttons {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .btn-punicao {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* Título */
+.Titulo {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* Tabela moderna */
+.tabela-respostas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabela-respostas th,
+.tabela-respostas td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.tabela-respostas th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.tabela-respostas tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Status */
+.status-ativo {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.status-inativo {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+/* Ações */
+.acoes-respostas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+/* Botões */
+.tabela-respostas button {
+  padding: 8px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn-visualizar {
+  background: linear-gradient(90deg, #3498db, #2980b9);
+}
+
+/* Hover */
+.tabela-respostas button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  opacity: 0.95;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.tabela-respostas button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+/* Botão desativado */
+.tabela-respostas button:disabled {
+  background: #bdc3c7 !important;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+/* Modal moderno */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: modalAppear 0.3s ease-out;
+}
+
+@keyframes modalAppear {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.modal h3 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.modal p {
+  margin-bottom: 15px;
+  text-align: left;
+  color: #555;
+}
+
+.conteudo-resposta {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  margin: 15px 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.modal-buttons button {
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.modal-buttons button:first-child {
+  background: linear-gradient(135deg, #00b0438a 0%, #96c93d 100%);
+  color: white;
+}
+
+.modal-buttons button:last-child {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+}
+
+.modal-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .admin-respostas-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .tabela-respostas {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .tabela-respostas th,
+  .tabela-respostas td {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+
+  .acoes-respostas {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .tabela-respostas button {
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modal-buttons button {
+    width: 100%;
+  }
+}
