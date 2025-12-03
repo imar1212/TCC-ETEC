@@ -1,22 +1,16 @@
 # Trabalho de Conclusão de Curso – Queer Coded 🏳️‍🌈💻
-Bem-vindo(a) ao **TCC – Queer Coded**!
+Bem-vindo(a) ao **TCC – Queer Coded**!  
 Aqui você encontrará um Trabalho de Conclusão de Curso desenvolvido durante o **3º ano do Ensino Médio Integrado ao Técnico em Informática para Internet**, na **ETEC de Campo Limpo Paulista (ETECAMP)**.
 
 ## Título do Projeto
 **Implementação de uma plataforma digital para auxiliar no apoio emocional de jovens LGBTQIAPN+ na região de Jundiaí**
 
-
-
 ---
 
-## 👥 Grupo do Trabalho
-- **Aline Valentinne da Silva**
-- **Jhenyffer Vieira de Oliveira**
-- **Maria Isabel de Castro Nascimento**
-
-## 👩‍🏫 Orientadoras
-- **Thaynara Cristina Maia dos Santos**
-- **Barbara Kathellen Andrade Porfirio**
+## 👥 Equipe 
+- **Aline Valentinne da Silva** – Parte escrita  
+- **Jhenyffer Vieira de Oliveira** – Parte escrita  
+- **Maria Isabel de Castro Nascimento** – Back-end e Front-end  
 
 ---
 
@@ -33,12 +27,11 @@ Durante o processo de pesquisa, percebemos que:
 Nosso objetivo:
 👉 **Criar um espaço seguro, anônimo e acolhedor onde jovens possam desabafar, acompanhar seu humor, acessar conteúdos informativos e construir rede de apoio.**
 
-O **Queer Coded** nasceu a partir de questionários e análises reais do público-alvo — tudo isso para criar uma plataforma que realmente atenda ás necessidade desse grupo.
+O **Queer Coded** nasceu a partir de questionários e análises reais do público-alvo — tudo isso para criar uma plataforma que realmente atenda às necessidades desse grupo.
 
 ---
 
 ## 🎞️ Algumas imagens para demonstrar o site
-
 *(Adicione seus prints na pasta Imagens_Readme)*
 
 ```
@@ -92,52 +85,81 @@ https://code.visualstudio.com/
 2. Instale o XAMPP:  
 https://www.apachefriends.org/pt_br/download.html
 
+---
+
 ### Carregar a base de dados
 
-1. Faça download do arquivo "bd.sql", localizado na pasta /database
-2. Abra o Xampp
-3. Instancie o "Apache" e o "MySQL"
-4. No "MySQL" clique no "Admin"
-5. Você será redirecionado a uma aba nova com o seguinte endereço: http://localhost/phpmyadmin/
-6. Na seção a esquerda, clique no botão "Novo"
-7. Na seção a direita, preencha o nome do banco de dados como "bd" (É importante que seja exatamente esse o nome)
-8. O navegador abrirá automaticamente o banco de dados criado, na barra de navegação, clique em "Importar"
-9. Na seção "Arquivo a Importar" clique na caixa de seleção chamada "Escolher arquivo"
-10. Selecione o banco de dados que foi baixado no primeiro passo
-11. Desça a tela de importação e clique no botão "Importar"
-12. Pronto!
-
-### Iniciar o site
-No navegador:
-```
-http://localhost/
-```
+1. Faça download do arquivo **bd.sql**, localizado na pasta `/database`  
+2. Abra o **XAMPP**  
+3. Inicie **Apache** e **MySQL**  
+4. No MySQL, clique em **Admin**  
+5. Você será redirecionado ao phpMyAdmin:  
+   👉 http://localhost/phpmyadmin/  
+6. No menu à esquerda, clique em **Novo**  
+7. Crie o banco de dados com o nome **bd** *(exatamente assim)*  
+8. Vá até a aba **Importar**  
+9. Clique em **Escolher arquivo**  
+10. Selecione o arquivo **bd.sql**  
+11. Role até o final e clique em **Importar**  
+12. Banco carregado com sucesso! 🎉  
 
 ---
 
-# 🕹️ Painel do administrador
-Acesse:
+### 🚀 Iniciar o site
+
+1. Faça o download dos arquivos da pasta **src**  
+2. Abra a **pasta raiz do projeto** no explorador de arquivos  
+3. Abra o **VS Code**  
+   - Vá em **File > Open Folder**  
+   - Selecione a pasta raiz do projeto  
+4. Abra **dois terminais** no VS Code:  
+   - Terminal → New Terminal  
+   - Clique na setinha → Split Terminal  
+   - Certifique-se de que ambos estão usando **CMD**  
+
+---
+
+### ▶️ Backend
+No primeiro terminal:
+
 ```
-http://localhost/queercoded/admin
+cd backend
+node app.js
 ```
 
-Funções:
-- Moderar postagens  
-- Aprovar denúncias  
-- Gerenciar usuários  
-- Gerenciar conteúdos  
+O servidor será iniciado.
+
+---
+
+### 🌐 Frontend
+No segundo terminal:
+
+```
+cd frontend
+npm install
+npm run dev
+```
+
+Um link aparecerá, normalmente:
+
+```
+http://localhost:5173/
+```
+
+Segure o Ctrl e clique no link.
 
 ---
 
 ## ⌨️🖱️ Como citar este trabalho
-ALINE, Valentinne da Silva; OLIVEIRA, Jhenyffer Vieira de; NASCIMENTO, Maria Isabel de Castro. **Implementação de uma plataforma digital para auxiliar no apoio emocional de jovens LGBTQIAPN+ na região de Jundiaí**. 2025.
+DA SILVA, Aline Valentinne; OLIVEIRA, Jhenyffer Vieira de; NASCIMENTO, Maria Isabel de Castro. **Implementação de uma plataforma digital para auxiliar no apoio emocional de jovens LGBTQIAPN+ na região de Jundiaí**. 2025.
 
 ---
 
 ## 📬 Contato
-- aline.silva1804@etec.sp.gov.br  
-- jhenyffer.oliveira@etec.sp.gov.br  
-- maria.nascimento462@etec.sp.gov.br  
+Em caso de dúvidas entre em contato!
+- alinevalentinne2@gmail.com  
+- jhenny.oliveira2009@gmail.com
+- mariaisabeldecastr0015@gmail.com
 
 ---
 
