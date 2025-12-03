@@ -22,7 +22,7 @@ Aqui você encontrará um Trabalho de Conclusão de Curso desenvolvido durante o
 
 ## ☕️ Descrição
 
-As Escolas Técnicas Estaduais de São Paulo valorizam projetos que estimulem colaboração, criatividade e desenvolvimento profissional dos alunos. Dentro desse espírito, nasceu o **Queer Coded**, uma plataforma digital criada para **acolher, apoiar emocionalmente e dar voz a jovens LGBTQIAPN+ da região de Jundiaí**.
+As Escolas Técnicas Estaduais de São Paulo valorizam projetos que estimulem colaboração, criatividade e desenvolvimento profissional dos alunos. Dentro desse espírito, nasceu o **Queer Coded**, uma plataforma digital criada para **acolher, apoiar emocionalmente e oferecer um espaço de expressão a jovens LGBTQIAPN+ da região de Jundiaí**.
 
 Durante o processo de pesquisa, percebemos que:
 - Jovens LGBTQIAPN+ sofrem altos índices de discriminação  
@@ -33,7 +33,7 @@ Durante o processo de pesquisa, percebemos que:
 Nosso objetivo:
 👉 **Criar um espaço seguro, anônimo e acolhedor onde jovens possam desabafar, acompanhar seu humor, acessar conteúdos informativos e construir rede de apoio.**
 
-O **Queer Coded** nasceu a partir de entrevistas, questionários e análises reais do público-alvo — para desenvolver um ambiente digital que realmente fizesse sentido para eles.
+O **Queer Coded** nasceu a partir de questionários e análises reais do público-alvo — tudo isso para criar uma plataforma que realmente atenda ás necessidade desse grupo.
 
 ---
 
