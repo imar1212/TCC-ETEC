@@ -93,23 +93,24 @@ https://code.visualstudio.com/
 https://www.apachefriends.org/pt_br/download.html
 
 ### Carregar a base de dados
-1. Vá até `xampp/htdocs`
-2. Coloque o projeto lá dentro  
-3. Abra o XAMPP e inicie MySQL e Apache  
-4. No phpMyAdmin:  
-   - Crie o banco **queercoded**  
-   - Importe o arquivo SQL em `/sql`
 
-### Configurar a conexão
-Edite:
-```
-/src/config/db.js
-```
+1. Faça download do arquivo "bd.sql", localizado na pasta /database
+2. Abra o Xampp
+3. Instancie o "Apache" e o "MySQL"
+4. No "MySQL" clique no "Admin"
+5. Você será redirecionado a uma aba nova com o seguinte endereço: http://localhost/phpmyadmin/
+6. Na seção a esquerda, clique no botão "Novo"
+7. Na seção a direita, preencha o nome do banco de dados como "bd" (É importante que seja exatamente esse o nome)
+8. O navegador abrirá automaticamente o banco de dados criado, na barra de navegação, clique em "Importar"
+9. Na seção "Arquivo a Importar" clique na caixa de seleção chamada "Escolher arquivo"
+10. Selecione o banco de dados que foi baixado no primeiro passo
+11. Desça a tela de importação e clique no botão "Importar"
+12. Pronto!
 
 ### Iniciar o site
 No navegador:
 ```
-http://localhost/queercoded
+http://localhost/
 ```
 
 ---
@@ -129,7 +130,7 @@ Funções:
 ---
 
 ## ⌨️🖱️ Como citar este trabalho
-ALINE, Valentinne da Silva; OLIVEIRA, Jhenyffer Vieira de; NASCIMENTO, Maria Isabel de Castro. **Implementação de uma plataforma digital para auxiliar no apoio emocional de jovens LGBTQIAPN+ na região de Jundiaí**. 2025. Trabalho de Conclusão de Curso – ETEC de Campo Limpo Paulista.
+ALINE, Valentinne da Silva; OLIVEIRA, Jhenyffer Vieira de; NASCIMENTO, Maria Isabel de Castro. **Implementação de uma plataforma digital para auxiliar no apoio emocional de jovens LGBTQIAPN+ na região de Jundiaí**. 2025.
 
 ---
 
@@ -140,4 +141,3 @@ ALINE, Valentinne da Silva; OLIVEIRA, Jhenyffer Vieira de; NASCIMENTO, Maria Isa
 
 ---
 
-## © 2025 – Todos os direitos reservados às autoras.
