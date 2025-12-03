@@ -148,6 +148,8 @@ http://localhost:5173/
 
 Segure o Ctrl e clique no link.
 
+*** OBS: Todos os acessos dos usuários cadastrados estão no arquivo users.txt na pasta /database junto com o arquivo do banco de dados
+
 ---
 
 ## ⌨️🖱️ Como citar este trabalho
