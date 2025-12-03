@@ -1,5 +1,5 @@
 # Trabalho de Conclusão de Curso – Queer Coded 🏳️‍🌈💻
-<div align="center"> <img src="img/Queer.png" alt="Logo do site" width="300"> </div>
+<div align="center"> <img src="design/Queer.png" alt="Logo do site" width="300"> </div>
 
 Bem-vindo(a) ao **TCC – Queer Coded**!  
 Aqui você encontrará um Trabalho de Conclusão de Curso desenvolvido durante o **3º ano do Ensino Médio Integrado ao Técnico em Informática para Internet**, na **ETEC de Campo Limpo Paulista (ETECAMP)**.
@@ -10,7 +10,7 @@ Aqui você encontrará um Trabalho de Conclusão de Curso desenvolvido durante o
 ---
 
 ## 👥 Equipe 
-<div align="center"> <img src="img/sobre.png" alt="Imagem das três integrantes do grupo" width="500"> </div>
+<div align="center"> <img src="design/sobre.png" alt="Imagem das três integrantes do grupo" width="500"> </div>
 
 - **Aline Valentinne da Silva** – Parte escrita  
 - **Jhenyffer Vieira de Oliveira** – Parte escrita  
@@ -37,10 +37,10 @@ O **Queer Coded** nasceu a partir de questionários e análises reais do públic
 
 ## 🎞️ Algumas imagens para demonstrar o site
 
-![Tela de Login](img/home.png)
-![Tela de Login](img/home_admin.png)
-![Tela de Login](img/home_user.png)
-![Tela de Login](img/controle_emocional.png)
+![Tela de Login](design/home.png)
+![Tela de Login](design/home_admin.png)
+![Tela de Login](design/home_user.png)
+![Tela de Login](design/controle_emocional.png)
 ---
 
 ## 🖥️ Linguagens usadas no website
