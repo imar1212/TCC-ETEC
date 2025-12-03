@@ -34,9 +34,9 @@ O **Queer Coded** nasceu a partir de questionários e análises reais do públic
 ## 🎞️ Algumas imagens para demonstrar o site
 *(Adicione seus prints na pasta Imagens_Readme)*
 
-```
+
 ![Tela de Login](img/home.png)
-```
+
 
 ---
 
