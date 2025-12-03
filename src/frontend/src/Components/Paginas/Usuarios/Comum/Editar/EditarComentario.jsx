@@ -17,7 +17,6 @@ const EditarComentario = ({ comentario, postId, onCancel, onSuccess }) => {
       setLoading(true);
       await updateComentario(comentario.Id_interacao, novoTexto);
 
-      // Retorna apenas o comentário atualizado
       const comentarioAtualizado = {
         ...comentario,
         TextoComentario: novoTexto,
@@ -26,7 +25,7 @@ const EditarComentario = ({ comentario, postId, onCancel, onSuccess }) => {
       };
 
       onSuccess(comentarioAtualizado);
-      onCancel(); // Fecha o editor
+      onCancel(); 
     } catch (err) {
       console.error("Erro ao editar comentário:", err);
       setErro("Erro ao editar comentário.");

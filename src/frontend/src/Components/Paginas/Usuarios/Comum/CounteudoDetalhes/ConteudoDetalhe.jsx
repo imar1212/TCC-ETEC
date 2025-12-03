@@ -10,7 +10,6 @@ const ConteudoDetalhes = () => {
   const [conteudo, setConteudo] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // 🔁 VERIFICAÇÃO DE LOGIN E PERMISSÕES - ADICIONADO
   useEffect(() => {
     const token = sessionStorage.getItem('token');
     const user = JSON.parse(sessionStorage.getItem('user'));
@@ -34,7 +33,7 @@ const ConteudoDetalhes = () => {
         const response = await getConteudoById(id);
         const data = response.data?.data || response.data;
 
-        // Ajusta caminho da imagem se for local
+
         if (data?.Imagem && !data.Imagem.startsWith("http")) {
           data.Imagem = `${process.env.REACT_APP_API_URL || "http://localhost:5000"}/${data.Imagem}`;
         }

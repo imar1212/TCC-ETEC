@@ -245,10 +245,10 @@ const AdminUsuarios = () => {
                       usuarioSelecionado.nome}?`}
               </p>
               <div className="modal-buttons">
-                <button className="btn-confirmar" onClick={confirmarAcao}>
+                <button onClick={confirmarAcao}>
                   Confirmar
                 </button>
-                <button className="btn-cancelar" onClick={cancelarAcao}>
+                <button  onClick={cancelarAcao}>
                   Cancelar
                 </button>
               </div>

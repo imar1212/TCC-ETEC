@@ -147,6 +147,7 @@
 
 /* ================= MODAL ================= */
 .modal-buttons button:first-child {
+  padding: 12px 25px;
   background: linear-gradient(90deg, #2ecc71, #00b043);
   color: #fff;
   box-shadow: 0 4px 12px rgba(0, 176, 67, 0.4);

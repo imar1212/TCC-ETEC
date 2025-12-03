@@ -18,8 +18,7 @@ const BotaoDenuncia = ({ alvoId, tipo, userId, denunciadoPor, onSuccess, classNa
   const [erro, setErro] = useState("");
   const [sucesso, setSucesso] = useState("");
   const [enviando, setEnviando] = useState(false);
-
-  // Preenche motivo inicial
+  
   useEffect(() => {
     if (tipo && motivosPredefinidos[tipo]) {
       setMotivo(motivosPredefinidos[tipo][0]);
