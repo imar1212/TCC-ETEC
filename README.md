@@ -35,10 +35,7 @@ O **Queer Coded** nasceu a partir de questionários e análises reais do públic
 *(Adicione seus prints na pasta Imagens_Readme)*
 
 ```
-Imagens_Readme/home.png
-Imagens_Readme/forum.png
-Imagens_Readme/humor.png
-Imagens_Readme/admin.png
+![Tela de Login](img/home.png)
 ```
 
 ---
