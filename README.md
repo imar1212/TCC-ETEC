@@ -61,16 +61,13 @@ O **Queer Coded** nasceu a partir de questionários e análises reais do públic
 ---
 
 ## ✔️ Etapas de construção do TCC
-- Definição do tema e defesa  
+- Definição do tema 
 - Pesquisa bibliográfica  
 - Aplicação de questionário  
-- Análise quantitativa e qualitativa  
-- Desenvolvimento da identidade visual  
+- Análise quantitativa
 - Modelagem do sistema  
+- Desenvolvimento da identidade visual  
 - Desenvolvimento do site  
-- Testes  
-- Escrita do artigo  
-- Apresentação à banca  
 
 ---
 
